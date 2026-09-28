@@ -1,0 +1,12 @@
+name: OS Info Workflow
+
+on: [push]
+
+jobs:
+  print_os:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello step
+        run: echo "Hello from [Karakat]"
+      - name: Print OS info
+        run: uname -a
